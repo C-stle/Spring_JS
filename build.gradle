@@ -1,0 +1,45 @@
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven {
+            url "http://maven.cubrid.org/"
+            allowInsecureProtocol = true
+        }
+    }
+    dependencies {
+        classpath 'io.spring.gradle:dependency-management-plugin:1.0.0.RELEASE'
+        classpath "io.franzbecker:gradle-lombok:1.8"
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '2.5.4'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+    id 'idea'
+}
+
+group = 'kr.co.rmsoft'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://maven.cubrid.org/"
+        allowInsecureProtocol = true
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+/*
+  ------------------------------
+    config-libs
+  ------------------------------
+*/
+apply from: 'config-libs.gradle'

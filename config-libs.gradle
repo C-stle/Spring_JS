@@ -1,0 +1,47 @@
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    /*
+    ------------------------------
+        developmentOnly
+    ------------------------------
+    */
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // spring boot - mybatis
+//    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1'
+
+//    implementation 'net.coobird:thumbnailator:0.4.8'
+
+    /* thymeleaf */
+    implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.5.2'
+
+    // Redis
+//    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+//    implementation 'org.springframework.session:spring-session-data-redis'
+//    implementation group: 'it.ozimov', name: 'embedded-redis', version: '0.7.2'
+
+    // Mongo DB
+//    implementation 'org.springframework.data:spring-data-mongodb'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+//    implementation group: 'org.mongodb', name: 'mongo-java-driver', version: '3.8.0'
+//    implementation group: 'org.mongodb', name: 'mongodb-driver', version: '3.8.0'
+
+    //___ compileOnly ___
+    compileOnly 'org.projectlombok:lombok'
+
+    implementation group: 'cubrid', name: 'cubrid-jdbc', version: '10.1.5.7809'
+
+//    implementation group: 'org.bgee.log4jdbc-log4j2', name: 'log4jdbc-log4j2-jdbc4', version: '1.16'
+
+    // Excel util
+//    implementation 'org.dbunit:dbunit:2.7.0'
+
+    implementation fileTree(dir: '/lib', include: ['*.jar'])
+
+//    implementation group: 'org.apache.poi', name: 'poi', version: '3.15'
+//    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '3.15'
+}

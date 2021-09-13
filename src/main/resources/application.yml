@@ -1,0 +1,10 @@
+server:
+  url: localhost
+  port: 7777
+
+spring:
+  datasource:
+    url: jdbc:cubrid:rmsoft3.iptime.org:34000:rfid:::?charset=UTF-8
+    driver-class-name: cubrid.jdbc.driver.CUBRIDDriver
+    username: rfid
+    password: rfid
