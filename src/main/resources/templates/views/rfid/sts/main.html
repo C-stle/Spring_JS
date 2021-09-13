@@ -4,7 +4,15 @@
       layout:decorator="layout/default">
 <!--      layout:decorate="~{/ac/ac002/ac002}">-->
 
-<script layout:fragment="script" type="text/javascript" th:src="@{/assets/js/ac/ac002/ac002.js}"></script>
-<div layout:fragment="contents" id="content-frame-container" class="ax-frame-contents">
-</div>
+<!--<script layout:fragment="script" type="text/javascript" th:src="@{/assets/js/ac/ac002/ac002.js}"></script>-->
+<th:block layout:fragment="pageCustomScript">
+    <script th:inline="javascript" th:src="@{/js/acd/sts/main.js}"></script>
+</th:block>
+<th:block layout:fragment="pageCustomCss">
+
+</th:block>
+
+<th:block layout:fragment="content">
+
+</th:block>
 </html>
